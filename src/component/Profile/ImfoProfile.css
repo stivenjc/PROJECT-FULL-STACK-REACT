@@ -1,0 +1,27 @@
+.width-image-profile {
+  width: 200px;
+  height: 200px;
+}
+
+.tamaño_button_edit_profile {
+  width: 100px;
+}
+
+.stilos-bagraud-profile {
+  position: relative;
+}
+
+.tamano-bagraund-profile {
+  width: 100%;
+  height: 25rem;
+}
+
+.stile-image-profile {
+  position: absolute;
+  left: 88px;
+  top: 330px;
+}
+
+.tamano-div-bagraund-profile {
+  width: 100%;
+}

@@ -1,0 +1,47 @@
+.color-fondo {
+  background: #121f3d;
+}
+.no-decoration {
+  text-decoration: None;
+}
+
+.tamaño-img {
+  width: 40px;
+  margin-left: 10px;
+}
+.fondo {
+  background: #95ca3e;
+  border-color: #95ca3e;
+}
+
+.fondo-2 {
+  background: #03091e;
+  color: #fff;
+  border-color: #03091e;
+}
+.pequeño {
+  width: 250px;
+}
+
+.tmñ-img {
+  width: 45px;
+}
+
+.sugestion_friends {
+  width: 200px;
+  position: fixed;
+  right: 300px;
+}
+
+.tamaño-card {
+  width: 100%;
+}
+
+.tamaño-icono-deleted {
+  width: 30px;
+}
+
+.tamanoo-card {
+  width: 306px !important;
+  height: 372px;
+}

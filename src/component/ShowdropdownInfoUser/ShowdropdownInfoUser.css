@@ -1,0 +1,11 @@
+.showdropdownInfoUser-div {
+  width: 330px;
+  height: 230px;
+  border: 1px solid black;
+  border-radius: 50px 50px 1px 50px;
+}
+
+.showdropdownInfoUser-img {
+  width: 100px;
+  height: 100px;
+}

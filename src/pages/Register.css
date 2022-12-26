@@ -1,0 +1,10 @@
+.register-password {
+  position: relative;
+}
+
+.register-image-eyes {
+  position: absolute;
+  width: 30px;
+  left: 234px;
+  bottom: 4px;
+}

@@ -1,0 +1,22 @@
+.search {
+  position: relative;
+}
+
+.red-modal {
+  position: absolute;
+  top: 60px;
+}
+
+.classInput {
+  border-radius: 2em !important;
+}
+
+.contenido-imagen {
+  width: 70px;
+  height: 70px;
+}
+
+.tmaño-home {
+  width: 30px;
+  margin-right: 25px;
+}

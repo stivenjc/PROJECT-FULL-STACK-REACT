@@ -1,0 +1,10 @@
+.login-password {
+  position: relative;
+}
+
+.login-image-eyes {
+  position: absolute;
+  width: 30px;
+  left: 233px;
+  bottom: 4px;
+}
