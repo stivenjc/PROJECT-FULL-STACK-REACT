@@ -65,9 +65,7 @@ export const updatepasswordUsers = async (data) => {
 
 export const searchUsers = async (palabra) => {
   try {
-    const { data } = await axios.get(
-      `${URL_BASE}users/?search=${palabra !== null ? palabra : "********"}`
-    );
+    const { data } = await axios.get(`${URL_BASE}users/?search=${palabra}`);
     return data;
   } catch (error) {
     console.error(error);

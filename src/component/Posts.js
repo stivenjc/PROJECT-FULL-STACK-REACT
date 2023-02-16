@@ -8,6 +8,11 @@ import { useSelector, useDispatch } from "react-redux";
 import { deltedPosts, getPosts } from "../api/postsAPI";
 import moment from "moment";
 import { map } from "lodash";
+import ComentForm from "../component/ComentForm";
+import { useFormik } from "formik";
+import { addComent } from "../api/coment";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 import Spinner from "react-bootstrap/Spinner";
 import { setPosts } from "../actions/posts";
@@ -147,14 +152,32 @@ export default function Posts() {
                             <img className="me-1 " src={likeImage} alt="" />
                             Me gusta
                           </button>
-                          <button className="col d-flex justify-content-center align-items-center border mx-2 rounded-pill p-1">
-                            <img className="me-1" src={messsageImage} alt="" />
-                            Comentar
-                          </button>
                           <button className="col d-flex justify-content-center align-items-center border mx-3 rounded-pill p-1">
                             <img className="me-1" src={compartirImage} alt="" />
                             Compartir
                           </button>
+                          <ComentForm idpost={item.id} />
+                        </div>
+                        <div>
+                          {map(item.comments, (coment) => (
+                            <>
+                              <div className="d-flex align-items-center">
+                                <img
+                                  src={coment.created_data.foto}
+                                  className="tmñ-img rounded-circle border-1 border-primary me-2 my-2"
+                                />
+                                <h6>
+                                  <strong>{coment.created_data.email}</strong>
+                                </h6>
+                                <small className="mx-4">{coment.title}</small>
+                              </div>
+                              <small>
+                                {moment(coment.mofified)
+                                  .startOf("seconds")
+                                  .fromNow()}
+                              </small>
+                            </>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -167,4 +190,11 @@ export default function Posts() {
       )}
     </>
   );
+}
+
+function initialValues() {
+  return {
+    title: "",
+    post: "",
+  };
 }

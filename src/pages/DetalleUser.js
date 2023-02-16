@@ -27,6 +27,7 @@ export default function DetalleUser({ id }) {
 
   return (
     <>
+      <title>dfasdfsdf</title>
       <div>
         <div className="d-flex justify-content-around">
           <div className="tamano-div-bagraund-profile mb-5">
